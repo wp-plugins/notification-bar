@@ -1,0 +1,21 @@
+/*-- notifybar.css
+--------------------*/
+#notifybar_push{position:relative;}
+
+#notifybar{display: block; left: 0;position: fixed;top: 0;width: 100%;z-index: 2147483647;background-image:url('../images/shadow.png');background-repeat:no-repeat;background-position:bottom center;}
+
+#notifybar .notifybar_topsec{width:100%;height:45px;border-bottom:2px solid #fff;}
+
+#notifybar .notifybar_topsec  .notifybar_center{display: block;margin: 0 auto;padding-top: 8px;padding-top: 7px\9;text-align: center;width: 800px;color:#fafafa}
+
+#notifybar .notifybar_topsec .notifybar_center  .notifybar_block{margin:5px;display:inline;}
+
+#notifybar  a.notifybar_botsec{width:35px;height:0px;background-image:url("../images/down_arrow.png");border-radius:0px 0px 5px 5px;border-style: solid;border-color: #FFFFFF;border-width: 3px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);display:block;position: absolute;right: 0;top:-43px;padding: 76px 0 0;}
+
+#notifybar  a.notifybar_botsec:hover{opacity:.8;}
+
+#notifybar  a.notifybar_close{background-image: url("../images/sprite.png");background-position: 0 58px;height:19px;position: absolute;right: 10px;top: 13px;width: 18px;z-index: 999999;}
+
+#notifybar  a.notifybar_close:hover {background-position: 0 77px;}
+
+#notifybar a.notifybar_button{border: 2px solid #FFFFFF;color: #FFFFFF;font-family: verdana;font-size: 12px;font-weight: bold;padding: 6px 20px;text-decoration: none;text-transform: uppercase;border-radius: 20px 20px 20px 20px;line-height:30px;}
