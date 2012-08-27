@@ -24,7 +24,6 @@ function notifybar_backend_scripts() {
 function notifybar_frontend_scripts() {	
 	if(!is_admin()){
 		wp_enqueue_script('jquery');
-		wp_enqueue_script( 'jquery-ui',plugins_url('js/jquery.bounce.min.js',__FILE__), array('jquery'));
 		wp_enqueue_script('notifybar',plugins_url('js/notifybar.js',__FILE__), array('jquery'));
 		wp_enqueue_style('notifybar',plugins_url('css/notifybar.css',__FILE__));
 	}

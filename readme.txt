@@ -4,7 +4,7 @@ Donate link: http://www.wpfruits.com
 Tags: notification bar, notification bar, notify users, top notification bar, posts, pages
 Requires at least: 2.8
 Tested up to: 3.4
-Stable tag: 1.0
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,9 @@ http://www.wpfruits.com/wp-content/uploads/2012/08/notification-bar-wordpress-pl
 
 
 == Changelog ==
+Version 1.0.3
+
+Updated the error by removing the bounce effect which was having issues with a few themes. 
 
 
 
