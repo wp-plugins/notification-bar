@@ -4,7 +4,7 @@ Plugin Name:Notification Bar
 Plugin URI: 
 Description: This plugin will show notification at top of the header.
 Author: Nishant Jain, rahulbrilliant2004, tikendramaitry
-Version: 1.0
+Version: 1.0.3
 Author URI: http://www.wpfruits.com
 */
 // ----------------------------------------------------------------------------------
