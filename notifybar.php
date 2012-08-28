@@ -139,7 +139,7 @@ $options = get_option('notifybar_options');
 	<div id="notifybar" class="run_once">
 		<div class="notifybar_topsec" style="background-color:<?php echo $options['color_scheme'] ?>">
 		<?php $from_this = "http://www.wpfruits.com/downloads/wp-plugins/notification-bar-plugin/?utm_refs=".$_SERVER['HTTP_REFERER']; ?>
-		<a title="Get this Notification for your website Now and Attrack visitors to your page" class="nb_fromthis" target="_blank" href="<?php echo $from_this; ?>" title=""><img src="<?php echo plugins_url('images/NB_32x32.png',__FILE__) ?>" /></a>
+		<a title="Get this Notification for your website Now and Attract visitors to your page" class="nb_fromthis" target="_blank" href="<?php echo $from_this; ?>" title=""><img src="<?php echo plugins_url('images/NB_32x32.png',__FILE__) ?>" /></a>
 			<div class="notifybar_center">
 				<?php if($options['text_field']){ ?><div class="notifybar_block"><?php echo $options['text_field'] ?></div><?php } ?>
 				<?php if($options['link_url']){ ?><a href="<?php echo $options['link_url'] ?>" target="_blank" class="notifybar_block notifybar_button" style="background-color:<?php echo $options['link_bgcolor'] ?>"><?php echo $options['link_text'] ?></a><?php } ?>
