@@ -19,3 +19,5 @@
 #notifybar  a.notifybar_close:hover {background-position: 0 77px;}
 
 #notifybar a.notifybar_button{border: 2px solid #FFFFFF;color: #FFFFFF;font-family: verdana;font-size: 12px;font-weight: bold;padding: 6px 20px;text-decoration: none;text-transform: uppercase;border-radius: 20px 20px 20px 20px;line-height:30px;}
+
+#notifybar a.nb_fromthis{ display: block;left: 5px;position: absolute;top: 15px;}
