@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name:Notification Bar
-Plugin URI: 
+Plugin URI: http://www.wpfruits.com/downloads/wp-plugins/notification-bar-plugin/
 Description: This plugin will show notification at top of the header.
 Author: Nishant Jain, rahulbrilliant2004, tikendramaitry
-Version: 1.0.3
+Version: 1.0.5
 Author URI: http://www.wpfruits.com
 */
 // ----------------------------------------------------------------------------------
