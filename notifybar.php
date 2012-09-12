@@ -4,7 +4,7 @@ Plugin Name:Notification Bar
 Plugin URI: http://www.wpfruits.com/downloads/wp-plugins/notification-bar-plugin/
 Description: This plugin will show notification at top of the header.
 Author: Nishant Jain, rahulbrilliant2004, tikendramaitry
-Version: 1.0.5
+Version: 1.0.7
 Author URI: http://www.wpfruits.com
 */
 // ----------------------------------------------------------------------------------
@@ -138,7 +138,7 @@ $options = get_option('notifybar_options');
 ?>  
 	<div id="notifybar" class="run_once">
 		<div class="notifybar_topsec" style="background-color:<?php echo $options['color_scheme'] ?>">
-		<?php $from_this = "http://www.wpfruits.com/downloads/wp-plugins/notification-bar-plugin/?utm_refs=".$_SERVER['HTTP_REFERER']; ?>
+		<?php $from_this = "http://www.wpfruits.com/downloads/wp-plugins/notification-bar-plugin/?utm_refs=".$_SERVER['SERVER_NAME']; ?>
 		<a title="Get this Notification for your website Now and Attract visitors to your page" class="nb_fromthis" target="_blank" href="<?php echo $from_this; ?>" title=""><img src="<?php echo plugins_url('images/NB_32x32.png',__FILE__) ?>" /></a>
 			<div class="notifybar_center">
 				<?php if($options['text_field']){ ?><div class="notifybar_block"><?php echo $options['text_field'] ?></div><?php } ?>

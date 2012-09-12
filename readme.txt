@@ -4,7 +4,7 @@ Donate link: http://www.wpfruits.com
 Tags: notification bar, notification bar, notify users, top notification bar, posts, pages
 Requires at least: 2.8
 Tested up to: 3.4
-Stable tag: 1.0.5
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,9 +58,14 @@ Version 1.0.5
 
 Fixed the width issue. Now its full width for the content.
 
+Version 1.0.7
+
+Fixed some minor issues with the jquery
+
 
 
 == Upgrade notice ==
+Please upgrade to get the jquery conflict fixed. 
 
 
 
