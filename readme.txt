@@ -3,15 +3,15 @@ Contributors: rahulbrilliant2004, tikendramaitry, Nishant Jain
 Donate link: http://www.wpfruits.com
 Tags: notification bar, notification bar, notify users, top notification bar, posts, pages
 Requires at least: 2.8
-Tested up to: 3.4
-Stable tag: 1.0.7
+Tested up to: 3.5
+Stable tag: 2.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A simple notification bar plugin which allows you to add a notifcation bar on the top of your wordpress site.    
 
 == Description ==
-Presenting you the very effective notification bar plugin which add a attracting bar to the top of your website to highlight some specific news  you want to convey to your users. 
+Presenting you the very effective notification bar plugin which add a attracting bar to the top or bottom (newly added) of your website to highlight some specific news  you want to convey to your users. 
 Notification Bar plugin comes with 5 color options each for the link button and the bar. 
 Special Features 5 Different color options to choose from. 
 Hides autmatically after 7 seconds.
@@ -62,6 +62,10 @@ Version 1.0.7
 
 Fixed some minor issues with the jquery
 
+Version 2.0.3
+
+Added Default Position option for Notification Bar (Top/Bottom) in admin panel.
+Fixed jquery issues with WordPress 3.5 version.
 
 
 == Upgrade notice ==
