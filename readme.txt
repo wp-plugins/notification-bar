@@ -4,7 +4,7 @@ Donate link: http://www.wpfruits.com
 Tags: notification bar, notification bar, notify users, top notification bar, posts, pages
 Requires at least: 2.8
 Tested up to: 3.5
-Stable tag: 2.0.3
+Stable tag: 2.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,10 @@ Version 2.0.3
 
 Added Default Position option for Notification Bar (Top/Bottom) in admin panel.
 Fixed jquery issues with WordPress 3.5 version.
+
+Version 2.0.4
+
+Fixed some jquery issues with 1.9.0 jQuery Library.
 
 
 == Upgrade notice ==
