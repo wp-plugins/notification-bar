@@ -45,7 +45,6 @@ For More Details please visit http://www.wpfruits.com/downloads/wp-plugins/notif
 An answer to that question.
 
 == Screenshots ==
-== Screenshots ==
 1. The settings page.
 
 
