@@ -45,8 +45,8 @@ For More Details please visit http://www.wpfruits.com/downloads/wp-plugins/notif
 An answer to that question.
 
 == Screenshots ==
-<img src="http://www.wpfruits.com/wp-content/uploads/2012/08/notification-bar-wordpress-plugin.png" />
-http://www.wpfruits.com/wp-content/uploads/2012/08/notification-bar-wordpress-plugin.png
+== Screenshots ==
+1. The settings page.
 
 
 == Changelog ==
