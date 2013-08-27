@@ -3,8 +3,8 @@ Contributors: rahulbrilliant2004, tikendramaitry, Nishant Jain
 Donate link: http://www.wpfruits.com
 Tags: notification bar, notification bar, notify users, top notification bar, posts, pages
 Requires at least: 2.8
-Tested up to: 3.5
-Stable tag: 2.0.4
+Tested up to: 3.6
+Stable tag: 2.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,30 +45,40 @@ For More Details please visit http://www.wpfruits.com/downloads/wp-plugins/notif
 An answer to that question.
 
 == Screenshots ==
-1. The settings page.
+1. The admin settings page.
+2. Frontend display.
 
 
 == Changelog ==
-Version 1.0.3
 
-Updated the error by removing the bounce effect which was having issues with a few themes. 
+=Version 2.0.5=
 
-Version 1.0.5
+Fixed some style and jquery issues.
+Replaced old select color dropdowns with the new color picker.
+Tested upto WordPress 3.6.
 
-Fixed the width issue. Now its full width for the content.
+=Version 2.0.4=
 
-Version 1.0.7
+Fixed some jquery issues with 1.9.0 jQuery Library.
 
-Fixed some minor issues with the jquery
-
-Version 2.0.3
+=Version 2.0.3=
 
 Added Default Position option for Notification Bar (Top/Bottom) in admin panel.
 Fixed jquery issues with WordPress 3.5 version.
 
-Version 2.0.4
+=Version 1.0.7=
 
-Fixed some jquery issues with 1.9.0 jQuery Library.
+Fixed some minor issues with the jquery
+
+=Version 1.0.5=
+
+Fixed the width issue. Now its full width for the content.
+
+
+=Version 1.0.3=
+
+Updated the error by removing the bounce effect which was having issues with a few themes. 
+
 
 
 == Upgrade notice ==
