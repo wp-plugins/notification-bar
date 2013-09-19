@@ -4,7 +4,7 @@ Donate link: http://www.wpfruits.com
 Tags: notification bar, notification bar, notify users, top notification bar, posts, pages
 Requires at least: 2.8
 Tested up to: 3.6
-Stable tag: 2.0.5
+Stable tag: 2.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,11 @@ An answer to that question.
 
 
 == Changelog ==
+
+
+=Version 2.0.6=
+Fixed few style and jquery issues.
+
 
 =Version 2.0.5=
 
