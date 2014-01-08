@@ -4,7 +4,7 @@ Plugin Name:Notification Bar
 Plugin URI: http://www.wpfruits.com/downloads/wp-plugins/notification-bar-plugin/
 Description: This plugin will show notification at top of the header.
 Author: Nishant Jain, rahulbrilliant2004, tikendramaitry
-Version: 2.0.6
+Version: 2.1.0
 Author URI: http://www.wpfruits.com
 */
 // ----------------------------------------------------------------------------------
@@ -45,8 +45,10 @@ function notifybar_defaults(){
 		'defaultposition' => 'top',
 		'color_scheme' => '#0F67A1',
         'text_field' => 'Get my Subscription',
+		'msgtxt_color' => '#FFFFFF',
     	'link_url' => 'http://www.wpfruits.com',
     	'link_text' => 'Subscribe',
+		'linktxt_color' => '#FFFFFF',
 		'link_bgcolor' => '#0F67A1'
     );
 return $default;
@@ -83,8 +85,10 @@ function notifybar_updates() {
 		'defaultposition' => $options['defaultposition'],
 		'color_scheme' => $options['color_scheme'],
     	'text_field' =>$options['text_field'],
+    	'msgtxt_color' =>$options['msgtxt_color'],
     	'link_url' =>$options['link_url'],
     	'link_text' => $options['link_text'],
+		'linktxt_color' => $options['linktxt_color'],
 		'link_bgcolor' => $options['link_bgcolor']
     );
 return $update_val;
@@ -354,6 +358,17 @@ $options['defaultposition']
 						<td><?php _e("Text Message", 'notifybar'); ?> :</td>
 						<td><textarea col="10" name="notifybar_options[text_field]"><?php echo $options['text_field'] ?></textarea></td>
 					</tr>
+					
+					<tr>
+						<td><?php _e("Text Message Color",'notifybar'); ?> :</td>
+						<td>
+							<div class="notifybar_colwrap">
+								<input type="text" id="notifybar_txtclr" class="notifybar_color_inp" value="<?php if($options['msgtxt_color']) echo $options['msgtxt_color']; else echo "#FFFFFF"; ?>" name="notifybar_options[msgtxt_color]" />
+								<div class="notifybar_colsel notifybar_txtclr"></div>
+							</div>
+						</td>
+					</tr>
+
 					<tr>
 						<td><?php _e("Link URL", 'notifybar'); ?> :</td>
 						<td><input type="text" name="notifybar_options[link_url]" value="<?php echo $options['link_url'] ?>" /></td>
@@ -361,6 +376,16 @@ $options['defaultposition']
 					<tr>
 						<td><?php _e("Link Button Text", 'notifybar'); ?> :</td>
 						<td><input type="text" name="notifybar_options[link_text]" value="<?php echo $options['link_text'] ?>" /></td>
+					</tr>
+					
+					<tr>
+						<td><?php _e("Link Text Color",'notifybar'); ?> :</td>
+						<td>
+							<div class="notifybar_colwrap">
+								<input type="text" id="notifybar_linktxtclr" class="notifybar_color_inp" value="<?php if($options['linktxt_color']) echo $options['linktxt_color']; else echo "#FFFFFF"; ?>" name="notifybar_options[linktxt_color]" />
+								<div class="notifybar_colsel notifybar_linktxtclr"></div>
+							</div>
+						</td>
 					</tr>
 					
 					<tr>
@@ -392,6 +417,8 @@ $options = get_option('notifybar_options');
 ?>  
 <style type="text/css">
 #notifybar{<?php echo $options['defaultposition'] ?>:0px;}
+#notifybar .notifybar_topsec .notifybar_center .notifybar_block {color:<?php echo $options['msgtxt_color'] ?>;}
+#notifybar .notifybar_topsec .notifybar_center .notifybar_button {color:<?php echo $options['linktxt_color'] ?>;}
 
 <?php if($options['defaultposition'] =="bottom"){ ?> 
 #notifybar .notifybar_topsec{border-top:3px solid #fff;border-bottom:0;}

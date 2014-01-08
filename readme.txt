@@ -2,9 +2,9 @@
 Contributors: rahulbrilliant2004, tikendramaitry, Nishant Jain
 Donate link: http://www.wpfruits.com
 Tags: notification bar, notification bar, notify users, top notification bar, posts, pages
-Requires at least: 2.8
-Tested up to: 3.6
-Stable tag: 2.0.6
+Requires at least: 3.0
+Tested up to: 3.8
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,39 +51,41 @@ An answer to that question.
 
 == Changelog ==
 
+=Version 2.1.0=
+* Added Text Message Color & Link Text Color option in plugin admin settings.
+* Compatible with WordPress latest version (3.8).
+
 
 =Version 2.0.6=
-Fixed few style and jquery issues.
-
+* Fixed few style and jquery issues.
 
 =Version 2.0.5=
 
-Fixed some style and jquery issues.
-Replaced old select color dropdowns with the new color picker.
-Tested upto WordPress 3.6.
+* Fixed some style and jquery issues.
+* Replaced old select color dropdowns with the new color picker.
+* Tested upto WordPress 3.6.
 
 =Version 2.0.4=
 
-Fixed some jquery issues with 1.9.0 jQuery Library.
+* Fixed some jquery issues with 1.9.0 jQuery Library.
 
 =Version 2.0.3=
 
-Added Default Position option for Notification Bar (Top/Bottom) in admin panel.
-Fixed jquery issues with WordPress 3.5 version.
+* Added Default Position option for Notification Bar (Top/Bottom) in admin panel.
+* Fixed jquery issues with WordPress 3.5 version.
 
 =Version 1.0.7=
 
-Fixed some minor issues with the jquery
+* Fixed some minor issues with the jquery
 
 =Version 1.0.5=
 
-Fixed the width issue. Now its full width for the content.
+* Fixed the width issue. Now its full width for the content.
 
 
 =Version 1.0.3=
 
-Updated the error by removing the bounce effect which was having issues with a few themes. 
-
+* Updated the error by removing the bounce effect which was having issues with a few themes. 
 
 
 == Upgrade notice ==

@@ -8,6 +8,8 @@ jQuery(document).ready(function(){
 	if (jQuery("#notifybar_admin").length){
 		jQuery('.notifybar_colorScheme').farbtastic('#notifybar_colorScheme');
 		jQuery('.notifybar_linkbg').farbtastic('#notifybar_linkbg');
+		jQuery('.notifybar_txtclr').farbtastic('#notifybar_txtclr');
+		jQuery('.notifybar_linktxtclr').farbtastic('#notifybar_linktxtclr');
 	}
 	jQuery('html').click(function() {jQuery("#notifybar_admin .farbtastic").fadeOut('fast');});
 	
