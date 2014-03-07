@@ -4,7 +4,7 @@ Plugin Name:Notification Bar
 Plugin URI: http://www.wpfruits.com/downloads/wp-plugins/notification-bar-plugin/
 Description: This plugin will show notification at top of the header.
 Author: Nishant Jain, rahulbrilliant2004, tikendramaitry
-Version: 2.1.0
+Version: 2.1.1
 Author URI: http://www.wpfruits.com
 */
 // ----------------------------------------------------------------------------------
@@ -41,15 +41,16 @@ function notifybar_plugin_admin_menu() {
 
 //This function will create new database fields with default values
 function notifybar_defaults(){
-	    $default = array(
+	$default = array(
 		'defaultposition' => 'top',
-		'color_scheme' => '#0F67A1',
-        'text_field' => 'Get my Subscription',
-		'msgtxt_color' => '#FFFFFF',
-    	'link_url' => 'http://www.wpfruits.com',
-    	'link_text' => 'Subscribe',
-		'linktxt_color' => '#FFFFFF',
-		'link_bgcolor' => '#0F67A1'
+		'staytime'        => '6000',
+		'color_scheme'    => '#0F67A1',
+        'text_field'      => 'Get my Subscription',
+		'msgtxt_color'    => '#FFFFFF',
+    	'link_url'        => 'http://www.wpfruits.com',
+    	'link_text'       => 'Subscribe',
+		'linktxt_color'   => '#FFFFFF',
+		'link_bgcolor'    => '#0F67A1'
     );
 return $default;
 }
@@ -83,6 +84,7 @@ function notifybar_updates() {
 	$options = $_POST['notifybar_options'];
 	    $update_val = array(
 		'defaultposition' => $options['defaultposition'],
+		'staytime' => $options['staytime'],
 		'color_scheme' => $options['color_scheme'],
     	'text_field' =>$options['text_field'],
     	'msgtxt_color' =>$options['msgtxt_color'],
@@ -343,6 +345,15 @@ $options['defaultposition']
 						<td><?php _e("Default Position",'notifybar'); ?> :</td>
 						<td><select name="notifybar_options[defaultposition]"><option value="top" <?php selected('top', $options['defaultposition']); ?>>Top</option><option value="bottom" <?php selected('bottom', $options['defaultposition']); ?>>Bottom</option></select></td>
 					</tr>
+					
+					<?php
+						$options['staytime'] = ($options['staytime'] !="") ? $options['staytime'] : '6000';
+					?>
+					
+					<tr>
+						<td><?php _e("Staytime", 'notifybar'); ?> :</td>
+						<td><input type="text" name="notifybar_options[staytime]" value="<?php echo $options['staytime'] ?>" /><small>( in MSec. )</small></td>
+					</tr>
 							
 					<tr>
 						<td><?php _e("Color Scheme",'notifybar'); ?> :</td>
@@ -441,14 +452,13 @@ $options = get_option('notifybar_options');
 		</div>
 	</div>
 	<a href="JavaScript:void(0);" class="notifybar_botsec" id="nbar_downArr" style="background-color:<?php echo $options['color_scheme'] ?>"></a>
-	
+	<?php $options['staytime'] = ($options['staytime'] !="") ? $options['staytime'] : '6000'; ?>
 <script type="text/javascript">
 	jQuery(document).ready(function(){
 		<?php 
 		if($options['defaultposition'] =="bottom"){ ?>jQuery('body').append('<div class="notifybar_push"></div>');<?php } 
 		else{ ?>jQuery('body').prepend('<div class="notifybar_push"></div>');<?php } ?>
-		
-		jQuery("#notifybar").notifybar();
+		jQuery("#notifybar").notifybar({staytime:'<?php echo $options['staytime']; ?>'});
 	});
 </script>
 

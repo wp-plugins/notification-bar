@@ -3,8 +3,8 @@ Contributors: rahulbrilliant2004, tikendramaitry, Nishant Jain
 Donate link: http://www.wpfruits.com
 Tags: notification bar, notification bar, notify users, top notification bar, posts, pages
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 2.1.0
+Tested up to: 3.8.1
+Stable tag: 2.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,12 +51,20 @@ An answer to that question.
 
 == Changelog ==
 
+=Version 2.1.1=
+
+* Added New "Staytime" option for notification bar in admin settings.
+* Compatible with WordPress latest version (3.8.1).
+
+
 =Version 2.1.0=
+
 * Added Text Message Color & Link Text Color option in plugin admin settings.
 * Compatible with WordPress latest version (3.8).
 
 
 =Version 2.0.6=
+
 * Fixed few style and jquery issues.
 
 =Version 2.0.5=
