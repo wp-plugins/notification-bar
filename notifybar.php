@@ -4,7 +4,7 @@ Plugin Name:Notification Bar
 Plugin URI: http://www.wpfruits.com/downloads/wp-plugins/notification-bar-plugin/
 Description: This plugin will show notification at top of the header.
 Author: Nishant Jain, rahulbrilliant2004, tikendramaitry
-Version: 2.1.1
+Version: 2.1.2
 Author URI: http://www.wpfruits.com
 */
 // ----------------------------------------------------------------------------------
@@ -57,23 +57,9 @@ return $default;
 
 // Runs when plugin is activated and creates new database field
 register_activation_hook(__FILE__,'notifybar_plugin_install');
-add_action('admin_init', 'notifybar_plugin_redirect');
-function notifybar_plugin_activate() {
-    add_option('notifybar_plugin_do_activation_redirect', true);
-}
-
-function notifybar_plugin_redirect() {
-    if (get_option('notifybar_plugin_do_activation_redirect', false)) {
-        delete_option('notifybar_plugin_do_activation_redirect');
-        wp_redirect('admin.php?page=notifybar');
-    }
-}
-
 function notifybar_plugin_install() {
     add_option('notifybar_options', notifybar_defaults());
-	notifybar_plugin_activate();
 }	
-
 
 // update the notifybar options
 if(isset($_POST['notifybar_update'])){

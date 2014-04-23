@@ -3,8 +3,8 @@ Contributors: rahulbrilliant2004, tikendramaitry, Nishant Jain
 Donate link: http://www.wpfruits.com
 Tags: notification bar, notification bar, notify users, top notification bar, posts, pages
 Requires at least: 3.0
-Tested up to: 3.8.1
-Stable tag: 2.1.1
+Tested up to: 3.9
+Stable tag: 2.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,11 @@ An answer to that question.
 
 
 == Changelog ==
+
+=Version 2.1.2=
+
+* Fixed few style issues in plugin admin settings.
+* Compatible with WordPress latest version (3.9).
 
 =Version 2.1.1=
 
