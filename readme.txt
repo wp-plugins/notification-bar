@@ -1,5 +1,5 @@
 === Notification Bar===
-Contributors: rahulbrilliant2004, tikendramaitry, Nishant Jain
+Contributors: rahulbrilliant2004, tikendramaitry
 Donate link: http://www.wpfruits.com
 Tags: notification bar, notification bar, notify users, top notification bar, posts, pages
 Requires at least: 3.0
